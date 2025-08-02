@@ -10,10 +10,11 @@ This project analyzes an online retail sales dataset using PostgreSQL. It includ
 
 ## 🔧 Tools Used
 
-- PostgreSQL
-- pgAdmin
-- Excel
-- Git & GitHub
+- **SQL (PostgreSQL)**: For data cleaning and querying
+- **Excel**: For initial cleanup and exploration
+- **Python (optional)**: For deeper analysis or visualizations
+- **Power BI**: For data visualization dashboards
+- **GitHub**: For version control and sharing
 
 ## 🔍 Key Insights
 
@@ -22,10 +23,11 @@ This project analyzes an online retail sales dataset using PostgreSQL. It includ
 - Monthly Trends
 - Country-wise Performance
 
-## 📊 Sample Query
+## 🔍 Queries
 
-```sql
-SELECT Country, SUM(Quantity * UnitPrice) AS country_sales
-FROM sales_data
-GROUP BY Country
-ORDER BY country_sales DESC;
+| File                 | Description                                      |
+|----------------------|--------------------------------------------------|
+| `total_sales.sql`    | Total revenue from sales                         |
+| `top_products.sql`   | Top 5 products by quantity sold                  |
+| `countrywise_sales.sql` | Sales grouped by country                     |
+| `monthly_sales.sql`  | Sales trend across months                        |
