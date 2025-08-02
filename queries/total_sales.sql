@@ -1,0 +1,1 @@
+SELECT SUM("Quantity" * "UnitPrice") AS total_sales FROM sales_data;
